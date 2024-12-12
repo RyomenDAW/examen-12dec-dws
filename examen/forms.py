@@ -104,7 +104,9 @@ class BusquedaAvanzadaPromocion(forms.Form):
     #Rango de fechas relacionadas con la fecha fin de la promoción. Buscar por una fecha mayor a la fecha fin y una fecha menor a la fecha fin. (0.6)
 
     #Búsqueda de promociones con un descuento mayor al indicado (0.6)
-
+    if descuento > 10:
+        descuento = None
+        
     #Permitir seleccionar varios usuarios (0.6)
 
     #Buscar por promociones activas (0.6)
