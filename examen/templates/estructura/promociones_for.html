@@ -1,0 +1,18 @@
+{% load bootstrap_icons %}
+{% for promocion in promociones %}
+    <div>
+        <h2>Nombre de la promocion: {{ promocion.nombre }}</h2>
+        <p><strong>Amperaje:</strong> {{ promocion.descripcion_promocion }}</p>
+        <p><strong>Productp:</strong> {{ promocion.producto }}</p>
+        <p><strong>Usuarios:</strong> {{ promocion.usuarios }}</p>
+        <p><strong>Descuento:</strong> {{ promocion.descuento }}</p>
+        <p><strong>Fecha Inicio Promocion:</strong> {{ promocion.fecha_inicio_promocion }}</p>
+        <p><strong>Fecha Fin Promocion:</strong> {{ promocion.fecha_fin_promocion }}</p>
+        <p><strong>Esta activa:</strong> {{ promocion.esta_activa }}</p>
+
+        <hr>
+    </div>
+{% endfor %}
+{% else %}
+<p>No hay promociones disponibles en este momento, lo sentimos</p>
+{% endif %}

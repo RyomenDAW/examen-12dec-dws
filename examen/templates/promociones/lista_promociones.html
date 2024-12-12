@@ -1,0 +1,21 @@
+{% extends "../estructura/templatefinal.html" %}
+
+{% block cabecera %}
+{% endblock %}
+
+
+{% block contenido %}
+    <h1>Lista de Procesadores</h1>
+    {% for promocion in promociones %}
+
+    {% include "estructura/promociones_for.html" %}
+    <br>
+    {% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
